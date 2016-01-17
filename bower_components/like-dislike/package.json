@@ -1,0 +1,8 @@
+{
+  "name": "like-dislike",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify": "0.0.5"
+  }
+}

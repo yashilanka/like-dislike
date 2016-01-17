@@ -1,0 +1,22 @@
+{
+  "name": "like-dislike",
+  "homepage": "https://github.com/uagrace/like-dislike",
+  "description": "Demo page",
+  "authors": [
+    "Maxim Tkachuk <uagrace91@gmail.com>"
+  ],
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "like-dislike": "*"
+  }
+}

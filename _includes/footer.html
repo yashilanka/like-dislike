@@ -1,0 +1,78 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JQuery -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- JQuery rating plugin -->
+  <script src="bower_components/like-dislike/js/like-dislike.js"></script>
+
+
+  <script type="text/javascript">
+    $('#rating').likeDislike({
+      reverseMode: false,
+      click: function (btnType, likes, dislikes, event) {
+        var likesBar = $(this).find('.likes');
+        var dislikedsBar = $(this).find('.dislikes');
+        likesBar.text(parseInt(likesBar.text()) + likes);
+        dislikedsBar.text(parseInt(dislikedsBar.text()) + dislikes);
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $('#rating2').likeDislike({
+      reverseMode: true,
+      click: function (btnType, likes, dislikes, event) {
+        var likesBar = $(this).find('.likes');
+        var dislikedsBar = $(this).find('.dislikes');
+        likesBar.text(parseInt(likesBar.text()) + likes);
+        dislikedsBar.text(parseInt(dislikedsBar.text()) + dislikes);
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $('#rating3').likeDislike({
+      readOnly: true,
+      click: function (btnType, likes, dislikes, event) {
+        var likesBar = $(this).find('.likes');
+        var dislikedsBar = $(this).find('.dislikes');
+        likesBar.text(parseInt(likesBar.text()) + likes);
+        dislikedsBar.text(parseInt(dislikedsBar.text()) + dislikes);
+      }
+    });
+  </script>
+
+</footer>

@@ -1,0 +1,28 @@
+{
+  "name": "like-dislike",
+  "version": "1.0.0",
+  "homepage": "https://github.com/uagrace/like-dislike",
+  "description": "JQuery rating plugin",
+  "authors": [
+    "Maxim Tkachuk <uagrace91@gmail.com>"
+  ],
+  "keywords": [
+    "like",
+    "dislike",
+    "rating"
+  ],
+  "main": "js/like-dislike.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

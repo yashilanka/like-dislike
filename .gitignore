@@ -1,0 +1,16 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+#phpstorm project files
+.idea
+
+#netbeans project files
+nbproject
+
+#eclipse, zend studio, aptana or other eclipse like project files
+.buildpath
+.project
+.settings
+
+/node_modules
